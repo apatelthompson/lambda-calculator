@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import style from "./app.module.css";
 
 // STEP 4 - import the button and display components
 // Don't forget to import any extra css/scss files you build into the correct component
@@ -20,16 +19,16 @@ function App() {
   // Don't forget to pass the functions (and any additional data needed) to the components as props
 
   return (
-    <div className={style.container}>
-      <Logo className={style.logo} />
-      <div className={style.app}>
+    <div className="container">
+      <Logo className="logo" />
+      <div className="app">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <div className={style.display}>{<Display />}</div>
-        <div className={style.buttons}>
-          <Operators className={style.operators} />
-          <div className={style.section}>
-            <Specials className={style.specials} />
-            <Numbers className={style.numbers} />
+        <div className="display">{<Display display={0} />}</div>
+        <div className="buttons">
+          <Operators className="operators" />
+          <div className="section">
+            <Specials className="specials" />
+            <Numbers className="numbers" />
           </div>
         </div>
       </div>

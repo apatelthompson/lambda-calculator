@@ -12,7 +12,7 @@ const Numbers = props => {
   return (
     <div>
       {numbers.map(number => (
-        <NumberButton number={number} />
+        <NumberButton key={number} number={number} />
       ))}
     </div>
   );

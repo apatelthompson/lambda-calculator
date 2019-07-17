@@ -13,7 +13,7 @@ const Specials = props => {
   return (
     <div>
       {specials.map(special => (
-        <SpecialButton special={special} />
+        <SpecialButton key={special} special={special} />
       ))}
     </div>
   );
